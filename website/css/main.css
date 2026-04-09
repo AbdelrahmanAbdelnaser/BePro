@@ -1,0 +1,30 @@
+@import url(components.css);
+@import url(layout.css);
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+}
+input {
+  width: 53%;
+  border-radius: 15px;
+  font-family: cursive;
+  padding: 5%;
+  margin-top: 4%;
+  height: 5vh;
+  outline: transparent;
+  border: none;
+  box-shadow: 3px 3px 6px 0px;
+}
+button {
+  width: 53%;
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+}
