@@ -1,12 +1,13 @@
 .form-container {
-  width: 56vh;
-  height: 65vh;
   position: absolute;
   top: 50%;
   right: 50%;
   transform: translate(50%, -50%);
 }
 
+.login-form input {
+  margin: 0%;
+}
 .login-form {
   display: flex;
   height: 90%;
@@ -15,9 +16,56 @@
   justify-content: space-evenly;
   align-items: center;
 }
-.login-form h2 {
-  text-shadow: 1px 1px 3px black;
+.wrapper {
+  width: 53%;
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  gap: 1%;
 }
-.login-form input {
-  margin: 0%;
+/* index.html design */
+
+.website-body {
+  display: grid;
+  height: 100%;
+  grid-template-rows: var(--main-height) 1fr 10vh;
+}
+.header {
+  grid-column: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  align-content: center;
+  flex-direction: row;
+}
+.header ul {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.header img {
+  height: 10vh;
+}
+nav {
+  width: stretch;
+}
+.logo {
+  height: var(--main-height);
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.course-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 3%;
+  width: 95%;
+  margin: auto;
+}
+.course-container {
+  height: 75vh;
+  display: flex;
+  flex-direction: column;
 }

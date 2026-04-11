@@ -5,6 +5,8 @@
   background-size: cover;
 }
 .form-container {
+  width: 56vh;
+  height: 65vh;
   background-color: rgb #adadad8a (173 173 173 / 54%);
   backdrop-filter: blur(9px);
   border-radius: 15px;
@@ -12,34 +14,141 @@
   color: lightblue;
 }
 
-.wrapper {
-  width: 53%;
-  height: 10%;
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-  gap: 1%;
-}
 .wrapper button {
   flex: 1;
   border: none;
   outline: none;
   height: auto;
+  border-bottom-left-radius: 0px !important;
+  border-bottom-right-radius: 0px !important;
 }
 .wrapper button:nth-child(1) {
   border-top-left-radius: 15px;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
 }
 .wrapper button:nth-child(2) {
-  border-top-right-radius: 15px;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
+  border-top-right-radius: var(--main-raduis);
 }
+
 .login-form button {
-  border-bottom-left-radius: 15px;
-  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: var(--main-raduis);
+  border-bottom-right-radius: var(--main-raduis);
   outline: none;
   border: none;
-  box-shadow: 3px 3px 6px 0px;
+  box-shadow: var(--main-shadow);
+}
+.login-form h2 {
+  text-shadow: var(--text-shadow);
+}
+/* index */
+.header {
+  background-color: white;
+}
+.hero {
+  display: flex;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  height: fit-content;
+}
+.hero-container {
+  width: 100%;
+  height: 33vh;
+  background-image: url(../images/backgrounds/neon-light-background.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15%;
+}
+.rating {
+  direction: rtl;
+  display: inline-flex;
+  text-shadow: 2px 2px 9px;
+}
+
+.rating input {
+  display: none;
+}
+
+.rating label {
+  font-size: 30px;
+  color: gray;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.rating label:hover,
+.rating label:hover ~ label {
+  color: gold;
+}
+
+.rating input:checked ~ label {
+  color: gold;
+  text-shadow: 2px 2px 9px;
+}
+.course-container h2 {
+  text-align: center;
+  padding: 1%;
+  background: linear-gradient(89deg, black, #efc006, #19261c, #00f9e8, black);
+  color: white;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: white;
+  height: 60vh;
+  border-radius: 15px;
+  justify-content: flex-start;
+  box-shadow: 1px 1px 10px 0px black;
+  margin: 1vh;
+  overflow: hidden;
+  opacity: 0.9;
+}
+.card .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: stretch;
+  padding-bottom: 1%;
+  text-align: center;
+}
+.card img {
+  width: 100%;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+  padding: 1%;
+}
+.card:hover {
+  opacity: 1;
+  box-shadow: 1px 1px 20px black;
+}
+footer {
+  background-color: #292d30;
+  color: white;
+  display: flex;
+  padding: 1%;
+  justify-content: space-between;
+}
+footer img {
+  width: 5vh;
+}
+footer:hover img {
+  color: blue;
+}
+.follow-us ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: row;
+  width: 100%;
+}
+.follow-us {
+  display: flex;
+  flex-direction: row;
+  width: 40%;
+  justify-content: space-evenly;
 }

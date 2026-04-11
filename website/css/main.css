@@ -1,5 +1,7 @@
 @import url(components.css);
 @import url(layout.css);
+@import url(variables.css);
+@import url(reset.css);
 * {
   box-sizing: border-box;
 }
@@ -7,7 +9,7 @@ html,
 body {
   margin: 0;
   height: 100%;
-  overflow: hidden;
+  background-color: whitesmoke;
 }
 input {
   width: 53%;
@@ -18,7 +20,7 @@ input {
   height: 5vh;
   outline: transparent;
   border: none;
-  box-shadow: 3px 3px 6px 0px;
+  box-shadow: var(--main-shadow);
 }
 button {
   width: 53%;
@@ -27,4 +29,12 @@ button {
   justify-content: center;
   flex-direction: row;
   align-items: center;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+ul {
+  list-style: none;
+  padding: 0%;
 }

@@ -1,0 +1,7 @@
+:root {
+  --main-shadow: 3px 3px 6px 0px;
+  --text-shadow: 1px 1px 3px black;
+  --main-raduis: 15px;
+  --main-height: 7vh;
+  --main-color: rgba(12, 22, 56, 1);
+}
