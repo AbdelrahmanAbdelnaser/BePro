@@ -65,7 +65,25 @@ nav {
   margin: auto;
 }
 .course-container {
-  height: 75vh;
   display: flex;
   flex-direction: column;
+}
+.courses-grid {
+  display: flex;
+  margin: 2vh auto;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.courses-grid .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: white;
+  border-radius: 15px;
+  justify-content: flex-start;
+  margin: 1vh;
+  overflow: hidden;
+  opacity: 0.9;
+  width: 31%;
 }

@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BePro</title>
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <div class="website-body">
+      <header class="header">
+        <div class="logo">
+          <img src="./images/logo.png" alt="" />
+        </div>
+        <nav>
+          <ul>
+            <li><a href="./index.html" data-link>Home</a></li>
+            <li><a href="./courses.html" data-link>Courses</a></li>
+            <li><a href="./about.html" data-link>About</a></li>
+            <li><a href="./login.html" data-link>Login</a></li>
+          </ul>
+        </nav>
+      </header>
+      <div class="container">
+        <section class="page-title">
+          <div class="title-container">
+            <h2>Explore Our Courses</h2>
+            <p>Find the perfect course for your career</p>
+          </div>
+        </section>
+        <section class="filter-container">
+          <form class="filter-form">
+            <input type="text" placeholder="Search courses..." />
+
+            <select>
+              <option disabled selected>Category</option>
+              <option>Programming</option>
+              <option>Design</option>
+            </select>
+
+            <select>
+              <option disabled selected>Level</option>
+              <option>Beginner</option>
+              <option>Intermediate</option>
+              <option>Advanced</option>
+            </select>
+
+            <select>
+              <option disabled selected>Price</option>
+              <option>Free</option>
+              <option>Paid</option>
+            </select>
+
+            <button class="btn primary">Search</button>
+          </form>
+        </section>
+        <div class="courses-items">
+          <section class="courses">
+            <div class="course-container">
+              <div class="courses-grid">
+                <div class="card">
+                  <img src="./images/courses/html-css-course.jpg" alt="html & css course" />
+                  <div class="content">
+                    <h3>HTML & CSS Basics</h3>
+                    <p>Learn how to build websites from scratch.</p>
+                    <div class="rating">
+                      <input type="radio" name="rate" id="star5" /><label for="star5">★</label>
+                      <input type="radio" name="rate" id="star4" /><label for="star4">★</label>
+                      <input type="radio" name="rate" id="star3" /><label for="star3">★</label>
+                      <input type="radio" name="rate" id="star2" /><label for="star2">★</label>
+                      <input type="radio" name="rate" id="star1" /><label for="star1">★</label>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <img src="images/courses/js.jpg" alt="JavaScript course" />
+                  <div class="content">
+                    <h3>JavaScript Mastery</h3>
+                    <p>Master JavaScript and build real projects.</p>
+                    <div class="rating">
+                      <input type="radio" name="rate2" id="star10" /><label for="star10">★</label>
+                      <input type="radio" name="rate2" id="star9" /><label for="star9">★</label>
+                      <input type="radio" name="rate2" id="star8" /><label for="star8">★</label>
+                      <input type="radio" name="rate2" id="star7" /><label for="star7">★</label>
+                      <input type="radio" name="rate2" id="star6" /><label for="star6">★</label>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <img src="images/courses/ux-ui.jpg" alt="UX UI course" />
+                  <div class="content">
+                    <h3>UI/UX Design</h3>
+                    <p>Design modern and user-friendly interfaces.</p>
+                    <div class="rating">
+                      <input type="radio" name="rate1" id="star15" /><label for="star15">★</label>
+                      <input type="radio" name="rate1" id="star14" /><label for="star14">★</label>
+                      <input type="radio" name="rate1" id="star13" /><label for="star13">★</label>
+                      <input type="radio" name="rate1" id="star12" /><label for="star12">★</label>
+                      <input type="radio" name="rate1" id="star11" /><label for="star11">★</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <img src="./images/courses/react.png" alt="react course image" />
+                  <div class="content">
+                    <h3>React framework</h3>
+                    <p>Learn how to build reusable UI components efficiently.</p>
+                    <div class="rating">
+                      <input type="radio" name="rate4" id="star20" /><label for="star20">★</label>
+                      <input type="radio" name="rate4" id="star19" /><label for="star19">★</label>
+                      <input type="radio" name="rate4" id="star18" /><label for="star18">★</label>
+                      <input type="radio" name="rate4" id="star17" /><label for="star17">★</label>
+                      <input type="radio" name="rate4" id="star16" /><label for="star16">★</label>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <img src="images/courses/angular.png" alt="Angular course" />
+                  <div class="content">
+                    <h3>Angular Mastery</h3>
+                    <p>Create powerful and maintainable user interfaces.</p>
+                    <div class="rating">
+                      <input type="radio" name="rate5" id="star25" /><label for="star25">★</label>
+                      <input type="radio" name="rate5" id="star24" /><label for="star24">★</label>
+                      <input type="radio" name="rate5" id="star23" /><label for="star23">★</label>
+                      <input type="radio" name="rate5" id="star22" /><label for="star22">★</label>
+                      <input type="radio" name="rate5" id="star21" /><label for="star21">★</label>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <img src="images/courses/git&github.png" alt="git & github course" />
+                  <div class="content">
+                    <h3>Git & Github</h3>
+                    <p>Manage code efficiently and collaborate with teams.</p>
+                    <div class="rating">
+                      <input type="radio" name="rate6" id="star30" /><label for="star30">★</label>
+                      <input type="radio" name="rate6" id="star29" /><label for="star29">★</label>
+                      <input type="radio" name="rate6" id="star28" /><label for="star28">★</label>
+                      <input type="radio" name="rate6" id="star27" /><label for="star27">★</label>
+                      <input type="radio" name="rate6" id="star26" /><label for="star26">★</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+
+      <footer>
+        <div>
+          <p>BEPRO</p>
+          <p>Learn new skills, build your future, and start your journey with our online courses.</p>
+        </div>
+
+        <div class="follow-us">
+          <ul>
+            <li>
+              <a href=""><img src="./images/instructors/facebook.svg" /></a>
+            </li>
+            <li>
+              <a href=""><img src="./images/instructors/instagram.svg" /></a>
+            </li>
+            <li>
+              <a href=""><img src="./images/instructors/invision.svg" /></a>
+            </li>
+            <li>
+              <a href=""><img src="./images/instructors/youtube.svg" /></a>
+            </li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+
+    <script type="module" src="./js/main.js"></script>
+  </body>
+</html>
