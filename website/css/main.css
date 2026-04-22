@@ -38,3 +38,6 @@ ul {
   list-style: none;
   padding: 0%;
 }
+.hidden {
+  display: none !important;
+}

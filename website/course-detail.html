@@ -1,0 +1,494 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BePro</title>
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <div class="website-body">
+      <header class="header">
+        <div class="logo">
+          <img src="./images/logo.png" alt="" />
+        </div>
+        <nav>
+          <ul>
+            <li><a href="./index.html" data-link>Home</a></li>
+            <li><a href="./courses.html" data-link>Courses</a></li>
+            <li><a href="./about.html" data-link>About</a></li>
+            <li><a href="./login.html" data-link>Login</a></li>
+          </ul>
+        </nav>
+      </header>
+      <div class="container-details">
+        <div class="course-container-details">
+          <div class="card-detail hidden" data-course="html">
+            <div class="details">
+              <div class="details-text">
+                <h1>HTML & CSS Basics</h1>
+                <p>Learn how to build websites from scratch.</p>
+                <button>Start learning</button>
+              </div>
+              <img src="./images/courses/html-css.png" alt="" />
+            </div>
+            <div class="details-container">
+              <!-- Left -->
+              <div>
+                <section>
+                  <h2>Course Description</h2>
+                  <p>This course teaches you how to create websites using HTML and CSS step by step.</p>
+                </section>
+
+                <section>
+                  <h2>What You'll Learn</h2>
+                  <ul>
+                    <li>✔ HTML Basics</li>
+                    <li>✔ CSS Styling</li>
+                    <li>✔ Responsive Design</li>
+                  </ul>
+                </section>
+
+                <section>
+                  <h2>Course Content</h2>
+                  <ul>
+                    <li>Introduction (10 min)</li>
+                    <li>HTML Basics (30 min)</li>
+                    <li>CSS Layout (40 min)</li>
+                  </ul>
+                </section>
+
+                <section>
+                  <h2>Instructor</h2>
+                  <p>John Doe – Frontend Developer with 5+ years experience.</p>
+                </section>
+
+                <section>
+                  <h2>Reviews</h2>
+                  <div class="rating">
+                    <input type="radio" name="rate" id="star5" /><label for="star5">★</label>
+                    <input type="radio" name="rate" id="star4" /><label for="star4">★</label>
+                    <input type="radio" name="rate" id="star3" /><label for="star3">★</label>
+                    <input type="radio" name="rate" id="star2" /><label for="star2">★</label>
+                    <input type="radio" name="rate" id="star1" /><label for="star1">★</label>
+                  </div>
+                </section>
+              </div>
+
+              <!-- Right Sidebar -->
+              <div>
+                <section class="price-box">
+                  <h3>$49</h3>
+                  <button>Buy Now</button>
+                  <p>✔ Lifetime access</p>
+                  <p>✔ Certificate</p>
+                </section>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-detail hidden" data-course="js">
+            <div class="details">
+              <div class="details-text">
+                <h1>JavaScript Mastery</h1>
+                <p>Master JavaScript and build real projects.</p>
+                <button>Start learning</button>
+              </div>
+              <img src="images/courses/js.jpg" alt="JavaScript course" />
+            </div>
+            <div class="details-container">
+              <!-- Left -->
+              <div>
+                <section>
+                  <h2>Course Description</h2>
+                  <p>This course teaches you how to create websites using HTML and CSS step by step.</p>
+                </section>
+
+                <section>
+                  <h2>What You'll Learn</h2>
+                  <ul>
+                    <li>✔ JavaScript Basics (Variables, Data Types)</li>
+                    <li>✔ Functions and Scope</li>
+                    <li>✔ DOM Manipulation</li>
+                    <li>✔ Events Handling</li>
+                    <li>✔ ES6 Features (Arrow Functions, Destructuring)</li>
+                    <li>✔ Fetch API & Working with APIs</li>
+                  </ul>
+                </section>
+
+                <section>
+                  <h2>Course Content</h2>
+                  <ul>
+                    <li>Introduction to JavaScript (10 min)</li>
+                    <li>Variables & Data Types (20 min)</li>
+                    <li>Functions & Scope (25 min)</li>
+                    <li>DOM Manipulation (40 min)</li>
+                    <li>Events Handling (30 min)</li>
+                  </ul>
+                </section>
+
+                <section>
+                  <h2>Instructor</h2>
+                  <p>
+                    Ahmed Ali – Senior JavaScript Developer specialized in DOM manipulation, APIs, and modern ES6+
+                    features with 5+ years of experience.
+                  </p>
+                </section>
+
+                <section>
+                  <h2>Reviews</h2>
+                  <div class="rating">
+                    <input type="radio" name="rate2" id="star10" /><label for="star10">★</label>
+                    <input type="radio" name="rate2" id="star9" /><label for="star9">★</label>
+                    <input type="radio" name="rate2" id="star8" /><label for="star8">★</label>
+                    <input type="radio" name="rate2" id="star7" /><label for="star7">★</label>
+                    <input type="radio" name="rate2" id="star6" /><label for="star6">★</label>
+                  </div>
+                </section>
+              </div>
+
+              <!-- Right Sidebar -->
+              <div>
+                <section class="price-box">
+                  <h3>$79</h3>
+                  <button>Buy Now</button>
+                  <p>✔ Lifetime access</p>
+                  <p>✔ Certificate</p>
+                </section>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-detail hidden" data-course="ux">
+            <div class="details">
+              <div class="details-text">
+                <h1>UX/UI Design Mastery</h1>
+                <p>Learn how to design modern, user-friendly interfaces and experiences.</p>
+                <button>Start learning</button>
+              </div>
+              <img src="images/courses/ux-ui.jpg" alt="UX UI course" />
+            </div>
+
+            <div class="details-container">
+              <!-- Left -->
+              <div>
+                <section>
+                  <h2>Course Description</h2>
+                  <p>
+                    This course teaches you the fundamentals of UX/UI design, from user research to building
+                    high-fidelity designs using modern tools.
+                  </p>
+                </section>
+
+                <section>
+                  <h2>What You'll Learn</h2>
+                  <ul>
+                    <li>✔ UX Fundamentals & User Research</li>
+                    <li>✔ Wireframing & Prototyping</li>
+                    <li>✔ UI Design Principles (Typography, Colors, Layout)</li>
+                    <li>✔ Design Systems</li>
+                    <li>✔ Figma Tools & Workflow</li>
+                    <li>✔ Creating Real App Interfaces</li>
+                  </ul>
+                </section>
+
+                <section>
+                  <h2>Course Content</h2>
+                  <ul>
+                    <li>Introduction to UX/UI (10 min)</li>
+                    <li>User Research Basics (20 min)</li>
+                    <li>Wireframing & Sketching (25 min)</li>
+                    <li>UI Design Principles (40 min)</li>
+                    <li>Figma Practice (30 min)</li>
+                  </ul>
+                </section>
+
+                <section>
+                  <h2>Instructor</h2>
+                  <p>
+                    Sara Mohamed – UX/UI Designer with 6+ years of experience in designing mobile apps and web
+                    interfaces for global brands.
+                  </p>
+                </section>
+
+                <section>
+                  <h2>Reviews</h2>
+                  <div class="rating">
+                    <input type="radio" name="rate3" id="star15" /><label for="star15">★</label>
+                    <input type="radio" name="rate3" id="star14" /><label for="star14">★</label>
+                    <input type="radio" name="rate3" id="star13" /><label for="star13">★</label>
+                    <input type="radio" name="rate3" id="star12" /><label for="star12">★</label>
+                    <input type="radio" name="rate3" id="star11" /><label for="star11">★</label>
+                  </div>
+                </section>
+              </div>
+
+              <!-- Right Sidebar -->
+              <div>
+                <section class="price-box">
+                  <h3>$89</h3>
+                  <button>Buy Now</button>
+                  <p>✔ Lifetime access</p>
+                  <p>✔ Certificate</p>
+                </section>
+              </div>
+            </div>
+          </div>
+          <div class="card-detail hidden" data-course="react">
+            <div class="details">
+              <div class="details-text">
+                <h1>React.js Mastery</h1>
+                <p>Learn how to build powerful modern web applications using React.</p>
+                <button>Start learning</button>
+              </div>
+              <img src="./images/courses/react.png" alt="React course" />
+            </div>
+
+            <div class="details-container">
+              <!-- Left -->
+              <div>
+                <section>
+                  <h2>Course Description</h2>
+                  <p>
+                    This course teaches you how to build fast, scalable, and interactive user interfaces using React.js
+                    from scratch.
+                  </p>
+                </section>
+
+                <section>
+                  <h2>What You'll Learn</h2>
+                  <ul>
+                    <li>✔ React Basics & Components</li>
+                    <li>✔ Props & State Management</li>
+                    <li>✔ Hooks (useState, useEffect)</li>
+                    <li>✔ React Router Navigation</li>
+                    <li>✔ Working with APIs in React</li>
+                    <li>✔ Building Real-World Projects</li>
+                  </ul>
+                </section>
+
+                <section>
+                  <h2>Course Content</h2>
+                  <ul>
+                    <li>Introduction to React (10 min)</li>
+                    <li>Components & JSX (25 min)</li>
+                    <li>State & Props (30 min)</li>
+                    <li>Hooks Basics (40 min)</li>
+                    <li>Project Building (50 min)</li>
+                  </ul>
+                </section>
+
+                <section>
+                  <h2>Instructor</h2>
+                  <p>
+                    Mohamed Hassan – Frontend Developer specialized in React.js with 5+ years of experience building
+                    scalable web applications.
+                  </p>
+                </section>
+
+                <section>
+                  <h2>Reviews</h2>
+                  <div class="rating">
+                    <input type="radio" name="rate4" id="star20" /><label for="star20">★</label>
+                    <input type="radio" name="rate4" id="star19" /><label for="star19">★</label>
+                    <input type="radio" name="rate4" id="star18" /><label for="star18">★</label>
+                    <input type="radio" name="rate4" id="star17" /><label for="star17">★</label>
+                    <input type="radio" name="rate4" id="star16" /><label for="star16">★</label>
+                  </div>
+                </section>
+              </div>
+
+              <!-- Right Sidebar -->
+              <div>
+                <section class="price-box">
+                  <h3>$99</h3>
+                  <button>Buy Now</button>
+                  <p>✔ Lifetime access</p>
+                  <p>✔ Certificate</p>
+                </section>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-detail hidden" data-course="angular">
+            <div class="details">
+              <div class="details-text">
+                <h1>Angular Mastery</h1>
+                <p>Learn how to build scalable single-page applications using Angular.</p>
+                <button>Start learning</button>
+              </div>
+              <img src="images/courses/angular.png" alt="Angular course" />
+            </div>
+
+            <div class="details-container">
+              <!-- Left -->
+              <div>
+                <section>
+                  <h2>Course Description</h2>
+                  <p>
+                    This course teaches you how to build powerful web applications using Angular framework from basics
+                    to advanced concepts.
+                  </p>
+                </section>
+
+                <section>
+                  <h2>What You'll Learn</h2>
+                  <ul>
+                    <li>✔ Angular Basics & Architecture</li>
+                    <li>✔ Components & Modules</li>
+                    <li>✔ Services & Dependency Injection</li>
+                    <li>✔ Routing & Navigation</li>
+                    <li>✔ Forms (Template-driven & Reactive)</li>
+                    <li>✔ Building Real-World Applications</li>
+                  </ul>
+                </section>
+
+                <section>
+                  <h2>Course Content</h2>
+                  <ul>
+                    <li>Introduction to Angular (10 min)</li>
+                    <li>Components & Templates (25 min)</li>
+                    <li>Services & DI (30 min)</li>
+                    <li>Routing Basics (40 min)</li>
+                    <li>Final Project (60 min)</li>
+                  </ul>
+                </section>
+
+                <section>
+                  <h2>Instructor</h2>
+                  <p>
+                    John Doe – Senior Frontend Developer with 10+ years of experience in building enterprise-level web
+                    applications using modern frameworks.
+                  </p>
+                </section>
+
+                <section>
+                  <h2>Reviews</h2>
+                  <div class="rating">
+                    <input type="radio" name="rate5" id="star25" /><label for="star25">★</label>
+                    <input type="radio" name="rate5" id="star24" /><label for="star24">★</label>
+                    <input type="radio" name="rate5" id="star23" /><label for="star23">★</label>
+                    <input type="radio" name="rate5" id="star22" /><label for="star22">★</label>
+                    <input type="radio" name="rate5" id="star21" /><label for="star21">★</label>
+                  </div>
+                </section>
+              </div>
+
+              <!-- Right Sidebar -->
+              <div>
+                <section class="price-box">
+                  <h3>$89</h3>
+                  <button>Buy Now</button>
+                  <p>✔ Lifetime access</p>
+                  <p>✔ Certificate</p>
+                </section>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-detail hidden" data-course="git">
+            <div class="details">
+              <div class="details-text">
+                <h1>Git & GitHub Mastery</h1>
+                <p>Learn version control and collaborate on projects like a pro.</p>
+                <button>Start learning</button>
+              </div>
+              <img src="images/courses/git&github.png" alt="Git and GitHub course" />
+            </div>
+
+            <div class="details-container">
+              <!-- Left -->
+              <div>
+                <section>
+                  <h2>Course Description</h2>
+                  <p>
+                    This course teaches you how to use Git for version control and GitHub for collaboration, managing
+                    projects, and working in teams effectively.
+                  </p>
+                </section>
+
+                <section>
+                  <h2>What You'll Learn</h2>
+                  <ul>
+                    <li>✔ Git Basics & Installation</li>
+                    <li>✔ Repositories & Commits</li>
+                    <li>✔ Branching & Merging</li>
+                    <li>✔ GitHub Workflow</li>
+                    <li>✔ Pull Requests & Collaboration</li>
+                    <li>✔ Real-world Project Workflow</li>
+                  </ul>
+                </section>
+
+                <section>
+                  <h2>Course Content</h2>
+                  <ul>
+                    <li>Introduction to Git (10 min)</li>
+                    <li>Basic Commands (20 min)</li>
+                    <li>Branching & Merging (30 min)</li>
+                    <li>Working with GitHub (40 min)</li>
+                    <li>Team Collaboration (50 min)</li>
+                  </ul>
+                </section>
+
+                <section>
+                  <h2>Instructor</h2>
+                  <p>
+                    Ahmed Ali – Senior JavaScript Developer specialized in DOM manipulation, APIs, and modern ES6+
+                    features with 5+ years of experience.
+                  </p>
+                </section>
+
+                <section>
+                  <h2>Reviews</h2>
+                  <div class="rating">
+                    <input type="radio" name="rate6" id="star30" /><label for="star30">★</label>
+                    <input type="radio" name="rate6" id="star29" /><label for="star29">★</label>
+                    <input type="radio" name="rate6" id="star28" /><label for="star28">★</label>
+                    <input type="radio" name="rate6" id="star27" /><label for="star27">★</label>
+                    <input type="radio" name="rate6" id="star26" /><label for="star26">★</label>
+                  </div>
+                </section>
+              </div>
+
+              <!-- Right Sidebar -->
+              <div>
+                <section class="price-box">
+                  <h3>$39</h3>
+                  <button>Buy Now</button>
+                  <p>✔ Lifetime access</p>
+                  <p>✔ Certificate</p>
+                </section>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div>
+          <p>BEPRO</p>
+          <p>Learn new skills, build your future, and start your journey with our online courses.</p>
+        </div>
+
+        <div class="follow-us">
+          <ul>
+            <li>
+              <a href=""><img src="./images/instructors/facebook.svg" /></a>
+            </li>
+            <li>
+              <a href=""><img src="./images/instructors/instagram.svg" /></a>
+            </li>
+            <li>
+              <a href=""><img src="./images/instructors/invision.svg" /></a>
+            </li>
+            <li>
+              <a href=""><img src="./images/instructors/youtube.svg" /></a>
+            </li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>
