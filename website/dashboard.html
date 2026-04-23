@@ -3,34 +3,65 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <style>
-      .header {
-        background: #4a90e2;
-        color: white;
-        position: relative;
-        height: 300px;
-        text-align: center;
-      }
-
-      .wave {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-      }
-    </style>
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="./css/main.css" />
   </head>
-  <body>
-    <div class="header">
-      <h1>Welcome</h1>
 
-      <svg class="wave" viewBox="0 0 1440 320">
-        <path
-          fill="#fff"
-          d="M0,96L60,112C120,128,240,160,360,154.7C480,149,600,107,720,112C840,117,960,171,1080,192C1200,213,1320,203,1380,197.3L1440,192V320H0Z"
-        ></path>
-      </svg>
+  <body>
+    <div class="dashboard">
+      <div class="sidebar">
+        <h2 onclick="goto('index')">BePro</h2>
+        <ul>
+          <li style="background: blueviolet">Dashboard</li>
+          <li onclick="goto('courses')">My Courses</li>
+          <li>Progress</li>
+          <li>Certificates</li>
+        </ul>
+      </div>
+
+      <div class="main">
+        <div class="topbar">
+          <h2>Welcome Back 👋</h2>
+          <button onclick="goto('login')">Logout</button>
+        </div>
+
+        <div class="dashboard-cards">
+          <div class="dashboard-card">
+            <h3>5</h3>
+            <p>Enrolled Courses</p>
+          </div>
+
+          <div class="dashboard-card">
+            <h3>12</h3>
+            <p>Completed Lessons</p>
+          </div>
+
+          <div class="dashboard-card">
+            <h3>3</h3>
+            <p>Certificates</p>
+          </div>
+        </div>
+
+        <div class="dashboard-courses">
+          <h2>My Courses</h2>
+
+          <div class="course-box">
+            <p>JavaScript Mastery</p>
+            <span class="badge">In Progress</span>
+          </div>
+
+          <div class="course-box">
+            <p>React.js</p>
+            <span class="badge">In Progress</span>
+          </div>
+
+          <div class="course-box">
+            <p>UX/UI Design</p>
+            <span class="badge">Completed</span>
+          </div>
+        </div>
+      </div>
     </div>
+    <script src="./js/main.js"></script>
   </body>
 </html>

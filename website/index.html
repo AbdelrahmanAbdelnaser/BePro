@@ -10,12 +10,12 @@
     <div class="website-body">
       <header class="header">
         <div class="logo">
-          <img src="./images/logo.png" alt="" />
+          <img onclick="goto('index')" src="./images/logo.png" alt="" />
         </div>
         <nav>
           <ul>
-            <li><a href="./index.html" data-link>Home</a></li>
             <li><a href="./courses.html" data-link>Courses</a></li>
+            <li><a href="./instructor.html" data-link>Instructors</a></li>
             <li><a href="./about.html" data-link>About</a></li>
             <li><a href="./login.html" data-link>Login</a></li>
           </ul>
@@ -34,7 +34,7 @@
             <h2>Featured Courses</h2>
 
             <div class="course-grid">
-              <div class="card">
+              <div class="card" onclick="gotoDetails('html')">
                 <img src="./images/courses/html-css-course.jpg" alt="html & css course" />
                 <div class="content">
                   <h3>HTML & CSS Basics</h3>
@@ -49,7 +49,7 @@
                 </div>
               </div>
 
-              <div class="card">
+              <div class="card" onclick="gotoDetails('js')">
                 <img src="images/courses/js.jpg" alt="JavaScript course" />
                 <div class="content">
                   <h3>JavaScript Mastery</h3>
@@ -64,7 +64,7 @@
                 </div>
               </div>
 
-              <div class="card">
+              <div class="card" onclick="gotoDetails('ux')">
                 <img src="images/courses/ux-ui.jpg" alt="UX UI course" />
                 <div class="content">
                   <h3>UI/UX Design</h3>
@@ -105,6 +105,6 @@
         </div>
       </footer>
     </div>
-    <script type="module" src="./js/main.js"></script>
+    <script src="./js/main.js"></script>
   </body>
 </html>
