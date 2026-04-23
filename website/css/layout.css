@@ -57,6 +57,7 @@ nav {
   align-items: center;
   justify-content: center;
 }
+/* courses.html */
 .course-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -87,3 +88,4 @@ nav {
   opacity: 0.9;
   width: 31%;
 }
+/* about.html */
